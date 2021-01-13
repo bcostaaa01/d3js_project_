@@ -28,7 +28,16 @@
         var numbers = [20, 30, 50, 30, 10, 90];
         var barHeight = 40;
 
-
+        d3.select('svg')
+            .selectAll('rect')
+            .data(numbers)
+            .enter()
+            .append('rect')
+            .attr('width', d => d)
+            .attr('height', barHeight - 4)
+            .attr(
+                'transform', (d, i) => 'translate(100,' + i * barHeight +')'
+                );
     </script>
 
 </body>
