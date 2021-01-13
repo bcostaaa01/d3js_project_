@@ -18,10 +18,17 @@
     <script>
         Bands = ['Keane', 'Coldplay', 'Cut Copy', 'Mew'];
         d3.select('h2').style('font-size', '50px');
-        d3.select('ul').selectAll('li').data(Bands).enter().append('li').text(band => band);
+        d3.select('ul')
+            .selectAll('li')
+            .data(Bands)
+            .enter()
+            .append('li')
+            .text(band => band);
 
         var numbers = [20, 30, 50, 30, 10, 90];
         var barHeight = 40;
+
+
     </script>
 
 </body>
