@@ -9,8 +9,8 @@
 <body>
     <h2>Data Visualization with D3JS</h2>
     <ul></ul>
-    <svg>
-        
+    <svg width="300px" height="300px">
+
     </svg>
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -19,6 +19,9 @@
         Bands = ['Keane', 'Coldplay', 'Cut Copy', 'Mew']
         d3.select('h2').style('font-size', '50px');
         d3.select('ul').selectAll('li').data(Bands).enter().append('li').text(band => band)
+
+        var numbers = [20, 30, 50, 30, 10, 90]
+        
     </script>
 
 </body>
