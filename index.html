@@ -15,7 +15,7 @@
     <script>
         Bands = ['Keane', 'Coldplay', 'Cut Copy', 'Mew']
         d3.select('h2').style('font-size', '50px');
-        d3.select('ul').selectAll('li')
+        d3.select('ul').selectAll('li').data(Bands).enter().append('li').text(band => band)
     </script>
 
 </body>
